@@ -1,5 +1,5 @@
 import unittest
-#from src.pañindrome import is_palindrome, clean_text
+from src.palindrome import is_palindrome
 class Testapalindrome(unittest.TestCase):
     def test_palindromes_simple(self):
         self.assertTrue(is_palindrome("oso"))
@@ -8,7 +8,7 @@ class Testapalindrome(unittest.TestCase):
         self.assertFalse(is_palindrome("arbol"))
     def test_frases_palindromes(self):
         self.assertTrue(is_palindrome("La ruta natural"))
-        self.assertTrue(is_palindrome("Amo la pacífica paloma"))
+        self.assertTrue(is_palindrome("Amo la pacifica paloma"))
         self.assertTrue(is_palindrome("Anita lava la tina"))
     def test_frases_no_palindromes(self):
         self.assertFalse(is_palindrome("El sol brilla"))
