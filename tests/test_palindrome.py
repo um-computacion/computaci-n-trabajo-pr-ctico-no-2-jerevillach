@@ -14,8 +14,12 @@ class Testapalindrome(unittest.TestCase):
         self.assertFalse(is_palindrome("El sol brilla"))
         self.assertFalse(is_palindrome("Python es genial"))
         self.assertFalse(is_palindrome("Hoy es un buen día"))
+    def test_casos_edge(self):
+        self.assertTrue(is_palindrome(""))
+        self.assertTrue(is_palindrome("a"))
+        self.assertFalse(is_palindrome("ab"))
+        self.assertFalse(is_palindrome("abc"))    
 if __name__ == "__main__":
-5-agregar-test-para-frases-no-palindromes
     unittest.main() 
     
-    unittest.main() 
+    
