@@ -15,5 +15,7 @@ class Testapalindrome(unittest.TestCase):
         self.assertFalse(is_palindrome("Python es genial"))
         self.assertFalse(is_palindrome("Hoy es un buen día"))
 if __name__ == "__main__":
+5-agregar-test-para-frases-no-palindromes
     unittest.main() 
     
+    unittest.main() 
