@@ -10,6 +10,9 @@ class Testapalindrome(unittest.TestCase):
         self.assertTrue(is_palindrome("La ruta natural"))
         self.assertTrue(is_palindrome("Amo la pacífica paloma"))
         self.assertTrue(is_palindrome("Anita lava la tina"))
-
+    def test_frases_no_palindromes(self):
+        self.assertFalse(is_palindrome("El sol brilla"))
+        self.assertFalse(is_palindrome("Python es genial"))
+        self.assertFalse(is_palindrome("Hoy es un buen día"))
 if __name__ == "__main__":
     unittest.main()      
